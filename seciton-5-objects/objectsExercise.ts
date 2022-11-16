@@ -42,6 +42,11 @@ boxOffice: {
 // getProfit(cats) => -21166652
 
 const getProfit = (movie: Movie): number => {
+
+  // With object destructuring
+  // const {grossWorldwide, budget} = movie.boxOffice;
+  // return grossWorldwide - budget;
+
   return movie.boxOffice.grossWorldwide - movie.boxOffice.budget
 }
 
